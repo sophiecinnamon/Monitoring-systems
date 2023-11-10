@@ -89,9 +89,7 @@ do
     printf '%-20.20s  ' "$labl"
     pr_bar ${RA[$labl]} $max
 done
-​```
 
-```bash
 awk '{cnt[$1]+=$10} END { for (var in cnt) print var, " ",  cnt[var];}' ~/access.log | sort -k 2 -rn | sort -k 2.1 -rn | bash histogram.sh
 # histogram.sh - название нового скрипта
 ```
